@@ -1,4 +1,3 @@
-<script>
     // Your JavaScript goes here!
     let name = "John";
     let surname = "Doe";
@@ -8,5 +7,13 @@
     const string = "The revolution will not be televised.";
     console.log(string); 
 
+    
+const button = document.querySelector("button");
 
-</script>
+function greet() {
+  const name = prompt("What is your name?");
+  const greeting = document.querySelector("#greeting");
+  greeting.textContent = `Hello ${name}, nice to see you!`;
+}
+
+button.addEventListener("click", greet);
